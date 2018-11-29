@@ -32,7 +32,8 @@ tagline:
     {% elsif post.description %}
     {{ post.description }}
     {% else %}
-    {{ post.excerpt }}
+      {{ post.excerpt }}
+       <a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
     {% endif %}
     {% endif %}
   </div>
