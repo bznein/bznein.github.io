@@ -15,3 +15,6 @@ comments: true
 
 
 ### Online compilers
+* [Godbolt](https://godbolt.org/): this is my reference when I really want to know what my code looks like after the compiler has done its job. It has an incredible number of option, many different compilers (and versions available). It has a nice interface which presents the generated code as simple as it is possible. I suggest you to start from the examples that can be loaded if you never looked at assembly code before!
+### Blogs
+### References
