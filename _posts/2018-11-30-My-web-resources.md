@@ -6,7 +6,7 @@ fullview: false
 comments: true
 ---
 
-**This post is intended to be a giant list of web resources that I find useful, grouped into categories.**
+**This post is intended to be a giant list of web resources that I find useful, grouped into categories.**  
 *(Constantly updated, hopefully)*
 
 ### Online compilers
