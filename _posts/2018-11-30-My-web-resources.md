@@ -11,7 +11,7 @@ comments: true
 
 ## Content:
 
-*[Online compilers](#online-compilers)
+* [Online compilers](#online-compilers)
 
 
 ### Online compilers
