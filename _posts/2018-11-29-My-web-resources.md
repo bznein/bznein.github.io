@@ -5,3 +5,5 @@ categories: [general][programming]
 fullview: false
 comments: true
 ---
+
+# This post is intended as a giant list of web resources that I find useful, grouped into categories
