@@ -14,6 +14,7 @@ If you know a great resource that is not listed here, **please please please** l
 ## Content:
 * [Blogs](#blogs)
 * [Online compilers](#online-compilers)
+* [Youtube channels](#youtube-channels)
 
 ### Blogs
 * [Fluent Cpp](https://www.fluentcpp.com/): this is the first blog that I started to read regularly; it is ran by [Jonathan Boccara](https://www.linkedin.com/in/jonathan-boccara-23826921/?originalSubdomain=fr), C++ developer with a great talent in divulgation; his posts are always clear, with examples that make even hard concepts easy (or, at least, as easy as possible) to grasp. The blog is updated with two posts weekly, on Tuesday and Friday, mostly written by him, sometims by guest writers.
@@ -24,3 +25,4 @@ If you know a great resource that is not listed here, **please please please** l
 
 ### References
 ### Youtube channels
+* [Jason Turner](https://www.youtube.com/user/lefticus1): Jason's videos are aboslutely a must-see for every C++ programmer who wants to expand his knowledge. His concice but clear explanations give intersting insights on many C++ aspects.
