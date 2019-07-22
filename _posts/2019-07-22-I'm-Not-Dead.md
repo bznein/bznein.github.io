@@ -8,7 +8,9 @@ comments: true
 
 My gosh!
 The last post on this blog is over 7 months old!
+
 I guess that starting a new blog in the middle of getting a new job and moving to a different country was not the best idea!
+
 But as I said in my [Welcome post](https://bznein.github.io/general/2018/11/29/Welcome.html), this time I **really** want to keep this thing up, so I'm back again!
 To help me trying to keep the blog alive, I decided on a regular schedule. I will post a new article every *monday* and *thursday*, and I really hope this time I'll be able to keep up with it.
 
