@@ -17,8 +17,10 @@ Last side note: as I said in the [presentation post](https://bznein.github.io/ge
 ## So, let's start!
 ### [Day 1](https://adventofcode.com/2018/day/1)
 This is a really simple warm-up day (the fastes solver took just ***26 SECONDS*** to complete the first part!) which we can summarize as follows:
-
-#### *Part 1: Given a list of integer numbers, compute the total sum*
+<details>
+  <summary>
+    Part 1: Given a list of integer numbers, compute the total sum
+  </summary>
 
 It is worth mentioning that in most cases, including this one, I will consider the input to be a file text in which each entry is on a different line.
 
@@ -38,8 +40,11 @@ int main()
 {% endhighlight %}
 
 This solution is straightforward, optimal in complexity (we are just reading every element once, you can't realyl get better than that!) and does the work just fine.
+</details>
 
-#### *Part 2: Find out the first partial sum that occurs twice* 
+<details>
+  <summary>Part 2: Find out the first partial sum that occurs twice</summary>
+  
 Let's give an example: suppose we have an input like this:
 ```
  3
@@ -61,3 +66,5 @@ The partial sums are the following:
   We see that get as partial sum **3** two times, and it is the first value for which this happens, and that makes **3** the output to our problem.
   
   But there's a caveat to this! If no partial sum occurs twice in our list, we have to loop from the beginning of our list again until we find one!
+  </summary>
+  
