@@ -14,6 +14,7 @@ Especially in these first few posts, I will discuss multiple days in a single ar
 
 Last side note: as I said in the [presentation post](https://bznein.github.io/general/programming/challenges/2018/12/03/Advent-of-code-2018.html) about the challenge, each one is divided into two parts. I will give the link to each day when discussing it, but unfortunately you won't be able to see the second part of the challenge without solving the first one.
 
+(side note: except when noted, I will consider the input to be given inside a single file called *input.txt*
 ## So, let's start!
 ### [Day 1](https://adventofcode.com/2018/day/1)
 This is a really simple warm-up day (the fastes solver took just ***26 SECONDS*** to complete the first part!) which we can summarize as follows:
@@ -22,24 +23,18 @@ This is a really simple warm-up day (the fastes solver took just ***26 SECONDS**
     Part 1: Given a list of integer numbers, compute the total sum
   </summary>
 
-It is worth mentioning that in most cases, including this one, I will consider the input to be a file text in which each entry is on a different line.
-
-In this case, a naive solution to the problem can be implemented as follows (omitting header inclusions for brevity):
+The straightforward, naive implementation is the one I used for the challenge and it can be seen [here](https://github.com/bznein/AoC2018/blob/master/Day01/part1/main.cpp). However, here I would loke to show a more elaborate one, that doesn't use manually written for loops and relies instead on built-in mechanism such as *[istream_iterator](https://en.cppreference.com/w/cpp/iterator/istream_iterator)* and *[std::accumulate](https://en.cppreference.com/w/cpp/algorithm/accumulate)*
 
 {% highlight cpp %}
 int main()
 {
-  auto ifS = std::ifstream("input.txt");
-  int totFrequency=0, tmp;
+    auto ifs = std::ifstream("input.txt");
+    auto ifsIt=std::istream_iterator<int>(ifs); // istream_iterator to the input file. Conversion from string to int specified in the template type 
+    std::istream_iterator<int> eos; // Represents the "end" iterator
 
-  while(ifS >> tmp)
-    totFrequency+=tmp;
-
-  std::cout << totFrequency << std::endl;
+    std::cout << std::accumulate(ifsIt, eos,0); // Loop between the iterators and accumulate the result (initialized at 0)
 }
 {% endhighlight %}
-
-This solution is straightforward, optimal in complexity (we are just reading every element once, you can't realyl get better than that!) and does the work just fine.
 </details>
 
 <details>
@@ -63,8 +58,8 @@ The partial sums are the following:
  +3 -2 + 4 -2 +6 = 9
   ```
   
-  We see that get as partial sum **3** two times, and it is the first value for which this happens, and that makes **3** the output to our problem.
+  We see that get as partial sum **3** two times, and it is the first value for which this happens, and that makes **3** the output to our problem. The caveat is that we do not have the guarantee that a value will occur twice while scanning the list. In that case we are required to start from scratch and keep looping until we found an answer.
   
-  But there's a caveat to this! If no partial sum occurs twice in our list, we have to loop from the beginning of our list again until we find one!
-  </summary>
+  The solution is not particulary interesting and not worth to be posted here, you can read it [on github](https://github.com/bznein/AoC2018/blob/master/Day01/part2/main.cpp). Just note the presence of *[std::map](https://en.cppreference.com/w/cpp/container/map)*, as it will become the most used type in the whole challenge!
+  </details>
   
