@@ -6,13 +6,13 @@ fullview: false
 comments: true
 ---
 
-As promised in [last Monday's post](https://bznein.github.io/general/programming/challenges/2019/07/22/I'm-Not-Dead.html), I want to share you the experience of finally completing, for the first time in my life, a full [Advent of Code](https://adventofcode.com/) challenge.
+As promised in [last Monday's post](https://bznein.github.io/general/programming/challenges/2019/07/22/I'm-Not-Dead.html), I want to share with you the experience of finally completing, for the first time in my life, a full [Advent of Code](https://adventofcode.com/) challenge.
 
-All the code I will show (except when noted) will be taken from my [Github Repository](https://github.com/bznein/AoC2018); I wonàt repost here the full texts of the challenges, which can get quite verbose, and all the "lore" (Christmas-themes) around it, but I will just summarize the definition of the problems and the expected output.
+All the code I will show (except when noted) will be taken from my [Github Repository](https://github.com/bznein/AoC2018); I won't repost here the full texts of the challenges, which can get quite verbose, and all the "lore" (Christmas-themes) around it, but I will just summarize the definition of the problems and the expected output.
 
 Especially in these first few posts, I will discuss multiple days in a single article, given that some of the challenges are really easy and require no more than a few lines of code.
 
-Last side note: as I said in the [presentation post](https://bznein.github.io/general/programming/challenges/2018/12/03/Advent-of-code-2018.html) about the challenge, each one is divided into two parts. I will give the link to each day when discussing it, but unfortunately you won't be able to see the second part of the challenge without solving the first one.
+As I said in the [presentation post](https://bznein.github.io/general/programming/challenges/2018/12/03/Advent-of-code-2018.html) about the challenge, each one is divided into two parts. I will give the link to each day when discussing it, but unfortunately you won't be able to see the second part of the challenge without solving the first one.
 
 (side note: except when noted, I will consider the input to be given inside a single file called *input.txt*)
 ## So, let's start!
@@ -22,7 +22,7 @@ Last side note: as I said in the [presentation post](https://bznein.github.io/ge
 
 #### Part 1: Given a list of integer numbers, compute the total sum
 
-The straightforward, naive implementation is the one I used for the challenge and it can be seen [here](https://github.com/bznein/AoC2018/blob/master/Day01/part1/main.cpp). However, here I would loke to show a more elaborate one, that doesn't use manually written for loops and relies instead on built-in mechanism such as *[istream_iterator](https://en.cppreference.com/w/cpp/iterator/istream_iterator)* and *[std::accumulate](https://en.cppreference.com/w/cpp/algorithm/accumulate)*
+The straightforward, naive implementation is the one I used for the challenge and it can be seen [here](https://github.com/bznein/AoC2018/blob/master/Day01/part1/main.cpp). However, here I would like to show a more elaborate one, that doesn't use manually written for loops and relies instead on built-in mechanism such as *[istream_iterator](https://en.cppreference.com/w/cpp/iterator/istream_iterator)* and *[std::accumulate](https://en.cppreference.com/w/cpp/algorithm/accumulate)*
 
 {% highlight cpp %}
 int main()
@@ -89,7 +89,7 @@ The partial sums are the following:
   
   This is another pretty easy task: given a list of strings such as 
   ```
-  abcde
+abcde
 fghij
 klmno
 pqrst
