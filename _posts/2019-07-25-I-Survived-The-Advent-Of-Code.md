@@ -18,6 +18,8 @@ Last side note: as I said in the [presentation post](https://bznein.github.io/ge
 ## So, let's start!
 ### [Day 1](https://adventofcode.com/2018/day/1) - Working with numbers
 
+<br/><br/>
+
 #### Part 1: Given a list of integer numbers, compute the total sum
 
 The straightforward, naive implementation is the one I used for the challenge and it can be seen [here](https://github.com/bznein/AoC2018/blob/master/Day01/part1/main.cpp). However, here I would loke to show a more elaborate one, that doesn't use manually written for loops and relies instead on built-in mechanism such as *[istream_iterator](https://en.cppreference.com/w/cpp/iterator/istream_iterator)* and *[std::accumulate](https://en.cppreference.com/w/cpp/algorithm/accumulate)*
@@ -65,6 +67,7 @@ The partial sums are the following:
   
 ### [Day 2](https://adventofcode.com/2018/day/2) - Working with strings
 
+<br/><br/>
 
 #### Part 1: count the amount of strings containing exactly two/three instances of a single character, then multiply them
   
