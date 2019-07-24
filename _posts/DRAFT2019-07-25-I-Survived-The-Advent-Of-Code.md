@@ -50,10 +50,10 @@ Let's give an example: suppose we have an input like this:
 
 The partial sums are the following:
 ```
- +3 = **3**
+ +3 = 3
  +3 -2 = 1
  +3 -2 + 4 = 5
- +3 -2 + 4 -2 = **3**
+ +3 -2 + 4 -2 = 3
  +3 -2 + 4 -2 +6 = 9
   ```
   
