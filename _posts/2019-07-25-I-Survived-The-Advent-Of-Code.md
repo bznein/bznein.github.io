@@ -17,10 +17,7 @@ Last side note: as I said in the [presentation post](https://bznein.github.io/ge
 (side note: except when noted, I will consider the input to be given inside a single file called *input.txt*
 ## So, let's start!
 ### [Day 1](https://adventofcode.com/2018/day/1)
-This is a really simple warm-up day (the fastes solver took just ***26 SECONDS*** to complete the first part!) which we can summarize as follows:
-<details>
-  <summary>Part 1: Given a list of integer numbers, compute the total sum
-  </summary>
+#### Part 1: Given a list of integer numbers, compute the total sum
 
 The straightforward, naive implementation is the one I used for the challenge and it can be seen [here](https://github.com/bznein/AoC2018/blob/master/Day01/part1/main.cpp). However, here I would loke to show a more elaborate one, that doesn't use manually written for loops and relies instead on built-in mechanism such as *[istream_iterator](https://en.cppreference.com/w/cpp/iterator/istream_iterator)* and *[std::accumulate](https://en.cppreference.com/w/cpp/algorithm/accumulate)*
 
@@ -34,10 +31,8 @@ int main()
     std::cout << std::accumulate(ifsIt, eos,0); // Loop between the iterators and accumulate the result (initialized at 0)
 }
 {% endhighlight %}
-</details>
 
-<details>
-  <summary>Part 2: Find out the first partial sum that occurs twice</summary>
+#### Part 2: Find out the first partial sum that occurs twice
   
 Let's give an example: suppose we have an input like this:
 ```
@@ -60,7 +55,7 @@ The partial sums are the following:
   We see that get as partial sum **3** two times, and it is the first value for which this happens, and that makes **3** the output to our problem. The caveat is that we do not have the guarantee that a value will occur twice while scanning the list. In that case we are required to start from scratch and keep looping until we found an answer.
   
   The solution is not particulary interesting and not worth to be posted here, you can read it [on github](https://github.com/bznein/AoC2018/blob/master/Day01/part2/main.cpp). Just note the presence of *[std::map](https://en.cppreference.com/w/cpp/container/map)*, as it will become the most used type in the whole challenge!
-  </details>
+
     
   
   
@@ -69,8 +64,7 @@ The partial sums are the following:
 Day 2 make us work with strings: specifically with single characters inside them.
 
 
-<details>
-  <summary>Part 1: count the amount of string containing exactly two/three instances of a single character, then multiply them</summary>
+#### Part 1: count the amount of strings containing exactly two/three instances of a single character, then multiply them
   
   
   E.g.: the string *abcad* counts for one, since it contais two instances of *a*.
@@ -82,10 +76,9 @@ Day 2 make us work with strings: specifically with single characters inside them
   The solution is again pretty straightforward and relies on a simple function, called *exactOccurrences* that takes as input the string *s* and an integer number *i*, and returns true if there is at least a character in *s* that appears **exacly** *s* times.
   
   You can find the code [here](https://github.com/bznein/AoC2018/blob/master/Day02/part1/main.cpp) and once again it is not worth being posted or commented here. *exactOccurrences* is a simple for loop which makes us of *[std::count](https://en.cppreference.com/w/cpp/algorithm/count)* and the main function just loops through the input file and accumulates the return values of *exactOccurrences(s,2)* and *exactOccurrences(s,3)*.
-</details>
 
-<details>
-  <summary>Part 2: find words with a difference of just one letter - and print common letters</summary>
+
+#### Part 2: find words with a difference of just one letter - and print common letters
   
   
   This is another pretty easy task: given a list of strings such as 
