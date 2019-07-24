@@ -79,7 +79,7 @@ The partial sums are the following:
   
   You can find the code [here](https://github.com/bznein/AoC2018/blob/master/Day02/part1/main.cpp) and once again it is not worth being posted or commented here. *exactOccurrences* is a simple for loop which makes us of *[std::count](https://en.cppreference.com/w/cpp/algorithm/count)* and the main function just loops through the input file and accumulates the return values of *exactOccurrences(s,2)* and *exactOccurrences(s,3)*.
 
-
+<br/><br/>
 
 #### Part 2: find words with a difference of just one letter - and print common letters
   
