@@ -14,7 +14,7 @@ Especially in these first few posts, I will discuss multiple days in a single ar
 
 Last side note: as I said in the [presentation post](https://bznein.github.io/general/programming/challenges/2018/12/03/Advent-of-code-2018.html) about the challenge, each one is divided into two parts. I will give the link to each day when discussing it, but unfortunately you won't be able to see the second part of the challenge without solving the first one.
 
-(side note: except when noted, I will consider the input to be given inside a single file called *input.txt*
+(side note: except when noted, I will consider the input to be given inside a single file called *input.txt*)
 ## So, let's start!
 ### [Day 1](https://adventofcode.com/2018/day/1) - Working with numbers
 
@@ -33,7 +33,7 @@ int main()
 }
 {% endhighlight %}
 
-
+<br/><br/>
 
 #### Part 2: Find out the first partial sum that occurs twice
   
