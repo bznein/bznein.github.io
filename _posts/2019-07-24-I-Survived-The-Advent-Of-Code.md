@@ -16,7 +16,8 @@ Last side note: as I said in the [presentation post](https://bznein.github.io/ge
 
 (side note: except when noted, I will consider the input to be given inside a single file called *input.txt*
 ## So, let's start!
-### [Day 1](https://adventofcode.com/2018/day/1)
+### [Day 1](https://adventofcode.com/2018/day/1) - Working with numbers
+
 #### Part 1: Given a list of integer numbers, compute the total sum
 
 The straightforward, naive implementation is the one I used for the challenge and it can be seen [here](https://github.com/bznein/AoC2018/blob/master/Day01/part1/main.cpp). However, here I would loke to show a more elaborate one, that doesn't use manually written for loops and relies instead on built-in mechanism such as *[istream_iterator](https://en.cppreference.com/w/cpp/iterator/istream_iterator)* and *[std::accumulate](https://en.cppreference.com/w/cpp/algorithm/accumulate)*
@@ -31,6 +32,8 @@ int main()
     std::cout << std::accumulate(ifsIt, eos,0); // Loop between the iterators and accumulate the result (initialized at 0)
 }
 {% endhighlight %}
+
+
 
 #### Part 2: Find out the first partial sum that occurs twice
   
@@ -60,8 +63,7 @@ The partial sums are the following:
   
   
   
-### [Day 2](https://adventofcode.com/2018/day/2)
-Day 2 make us work with strings: specifically with single characters inside them.
+### [Day 2](https://adventofcode.com/2018/day/2) - Working with strings
 
 
 #### Part 1: count the amount of strings containing exactly two/three instances of a single character, then multiply them
@@ -76,6 +78,7 @@ Day 2 make us work with strings: specifically with single characters inside them
   The solution is again pretty straightforward and relies on a simple function, called *exactOccurrences* that takes as input the string *s* and an integer number *i*, and returns true if there is at least a character in *s* that appears **exacly** *s* times.
   
   You can find the code [here](https://github.com/bznein/AoC2018/blob/master/Day02/part1/main.cpp) and once again it is not worth being posted or commented here. *exactOccurrences* is a simple for loop which makes us of *[std::count](https://en.cppreference.com/w/cpp/algorithm/count)* and the main function just loops through the input file and accumulates the return values of *exactOccurrences(s,2)* and *exactOccurrences(s,3)*.
+
 
 
 #### Part 2: find words with a difference of just one letter - and print common letters
