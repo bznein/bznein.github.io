@@ -16,9 +16,10 @@ As I said in the [presentation post](https://bznein.github.io/general/programmin
 
 (side note: except when noted, I will consider the input to be given inside a single file called *input.txt*)
 ## So, let's start!
-### [Day 1](https://adventofcode.com/2018/day/1) - Working with numbers
 
-<br/><br/>
+<br/>
+
+### [Day 1](https://adventofcode.com/2018/day/1) - Working with numbers
 
 #### Part 1: Given a list of integer numbers, compute the total sum
 
@@ -35,7 +36,6 @@ int main()
 }
 {% endhighlight %}
 
-<br/><br/>
 
 #### Part 2: Find out the first partial sum that occurs twice
   
@@ -61,13 +61,9 @@ The partial sums are the following:
   
   The solution is not particulary interesting and not worth to be posted here, you can read it [on github](https://github.com/bznein/AoC2018/blob/master/Day01/part2/main.cpp). Just note the presence of *[std::map](https://en.cppreference.com/w/cpp/container/map)*, as it will become the most used type in the whole challenge!
 
-    
-  
-  
-  
-### [Day 2](https://adventofcode.com/2018/day/2) - Working with strings
-
 <br/><br/>
+
+### [Day 2](https://adventofcode.com/2018/day/2) - Working with strings
 
 #### Part 1: count the amount of strings containing exactly two/three instances of a single character, then multiply them
   
@@ -82,7 +78,6 @@ The partial sums are the following:
   
   You can find the code [here](https://github.com/bznein/AoC2018/blob/master/Day02/part1/main.cpp) and once again it is not worth being posted or commented here. *exactOccurrences* is a simple for loop which makes us of *[std::count](https://en.cppreference.com/w/cpp/algorithm/count)* and the main function just loops through the input file and accumulates the return values of *exactOccurrences(s,2)* and *exactOccurrences(s,3)*.
 
-<br/><br/>
 
 #### Part 2: find words with a difference of just one letter - and print common letters
   
