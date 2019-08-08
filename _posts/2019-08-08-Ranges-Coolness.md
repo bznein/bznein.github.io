@@ -1,11 +1,10 @@
+---
 layout: post
 title: About some Range coolness...
 categories: [general,programming,C++, C++20]
 fullview: false
 comments: true
-
-------
-
+---
 
 
 *Small note: the posts about Advent Of Code are temporarily suspended, I need to devise a better way to present them, as they would have become boring and useless quite fast... I will probably focus just on two or three really interesting challenges and skip all the rest*.
