@@ -130,9 +130,7 @@ for x1,x2 in zip(Y1,Y2):
 
 which outputs `(1,4) (2,5) (3,6)`.
 
-Until now, we missed a standard way to do that (it was possible in Boost). Now, we can easily 
-
-do that:
+Until now, we missed a standard way to do that (it was possible in Boost). Now, we can easily do that:
 
 ```c++
   std::vector<int> v1{1,2,3};
