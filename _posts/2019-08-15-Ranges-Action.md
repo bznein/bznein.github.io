@@ -6,6 +6,7 @@ categories: [general,programming,C++, C++20]
 fullview: false
 comments: true
 
+excerpt_separator: <!--more-->
 ---
 
 
@@ -15,6 +16,7 @@ comments: true
 In the last [few](https://bznein.github.io/general/programming/c++/c++20/2019/08/01/Ranges-Library.html) [posts](https://bznein.github.io/general/programming/c++/c++20/2019/08/08/Ranges-Coolness.html) I focused on Ranges views and how they make code more clear and readable.
 
 Well, as it turns out, this is true also for actions, maybe even more!
+<!--more-->
 
 
 
