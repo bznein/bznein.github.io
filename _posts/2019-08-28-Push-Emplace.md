@@ -6,6 +6,7 @@ categories: [general,programming,C++]
 fullview: false
 comments: true
 
+excerpt_separator: <!--more-->
 ---
 
 ## Let's try one thing
@@ -16,6 +17,7 @@ Done? Write down the number of results.
 
 Now do the same with `emplace_back`. Compare the results.
 
+<!--more-->
 
 
 I'm ready to bet that the first search gave *way* more results than the second one. Why?
