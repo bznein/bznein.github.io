@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Push_back and its younger brother.
+title: Push_back and its younger brother
 categories: [general,programming,C++]
 fullview: false
 comments: true
@@ -9,7 +9,7 @@ comments: true
 excerpt_separator: <!--more-->
 ---
 
-## Let's try one thing
+### Let's try one thing
 
 Do me a favour. Open up a project, any project, and search for all the occurrences of (std::vector)`push_back`.
 
