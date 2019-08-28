@@ -142,6 +142,7 @@ Since `push_back`is receiving a temporary object, it needs to copy it into the v
 
 `emplace_back`, on the other side, is called by directly passing it the arguments that get forwarded to the constructor of `Person`, thus avoiding the need for the copy constructor to be called!
 
+
 #### C++17 addendum
 
 There is another nice, little reason to prefer `emplace_back` over `push_back`, and it is a change to its signature since *C++17*.
