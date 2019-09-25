@@ -138,7 +138,7 @@ Copy constructor called 0 times.
 
 
 
-Since `push_back`is receiving a temporary object, it needs to copy it into the vector, so each call to `push_back`actually implies two object constructions: the first one is at `new Person("firstName", "lastName"))`, and the second one is the one of the copy constructor that is called inside `push_back`to copy the object inside the vector. 
+Since `push_back`is receiving a temporary object, it needs to copy it into the vector, so each call to `push_back`actually implies two object constructions: the first one is at `Person("firstName", "lastName"))`, and the second one is the one of the copy constructor that is called inside `push_back`to copy the object inside the vector. 
 
 `emplace_back`, on the other side, is called by directly passing it the arguments that get forwarded to the constructor of `Person`, thus avoiding the need for the copy constructor to be called!
 
@@ -175,7 +175,7 @@ And suppose that, for whatever reason, we want to change the first name of each 
 
 ```c++
 for (int i = 0; i < N; i++) {
-    person1.push_back(new Person("firstName", "lastName"));
+    person1.push_back(Person("firstName", "lastName"));
     person1.back().changeFirstName("newFirstName");
 }
 ```
