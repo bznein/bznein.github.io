@@ -90,7 +90,7 @@ int main()
     std::vector<Person> person1;
     person1.reserve(N);
     for (int i = 0; i < N; i++) {
-        person1.push_back(*(new Person("firstName", "lastName")));
+        person1.push_back(Person("firstName", "lastName"));
     }
     
     std::cout << "--------- push_back results ----------\n";
@@ -134,7 +134,7 @@ Normal constructor called 40000 times.
 Copy constructor called 0 times.
 ```
 
-(see the code in action and play with it [here](https://wandbox.org/permlink/VapdIicNcWS9YAYT))
+(see the code in action and play with it [here](https://wandbox.org/permlink/cRRxp388US57WIGB))
 
 
 
@@ -175,7 +175,7 @@ And suppose that, for whatever reason, we want to change the first name of each 
 
 ```c++
 for (int i = 0; i < N; i++) {
-    person1.push_back(*(new Person("firstName", "lastName")));
+    person1.push_back(new Person("firstName", "lastName"));
     person1.back().changeFirstName("newFirstName");
 }
 ```
@@ -188,7 +188,7 @@ for (int i = 0; i < N; i++) {
 }
 ```
 
-(code [here](https://wandbox.org/permlink/1BD6o0Ao8m4wJtbu))
+(code [here](https://wandbox.org/permlink/zDjme80KuNXrmOe0))
 
 
 
